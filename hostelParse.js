@@ -276,7 +276,6 @@ function analizeByMonth(yearObjects) {
 		const month = date.month
 
 		if (!months[month]) { months[month] = [] }
-
 		months[month].push(object)
 	})
 
