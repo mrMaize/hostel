@@ -19,21 +19,21 @@ function formattedDate(date) {
 
 	const splittedDate = date.split('/')
 	
-	let day = splittedDate[0]
+	let day = splittedDate[1]
 
 	let year = splittedDate[2]
 	if (year.length === 2) {
 		year = `20${year}`
 	}
 
-	let month = splittedDate[1]
-	if (month.length === 2 && month[0] === '0') {
+	let month = splittedDate[0]
+	/*if (month.length === 2 && month[0] === '0') {
 		month = month[1]
 	}
 	if (parseInt(month) > 12) {
 		month = splittedDate[0]
 		day = splittedDate[1]
-	}
+	}*/
 
 	return {
 		day: day,
